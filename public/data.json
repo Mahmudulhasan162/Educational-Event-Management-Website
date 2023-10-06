@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/QKxvbQ9/Interactive-Workshops-Series.jpg",
+      "service_name": "Interactive Workshops Series",
+      "price": 199.99,
+      "short_description": "Engage in hands-on learning with our series of interactive workshops. Unlock practical skills and knowledge."
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/c688XVy/Webinar-Mastery-Sessions.jpg",
+      "service_name": "Webinar Mastery Sessions",
+      "price": 149.99,
+      "short_description": "Participate in insightful webinars led by industry leaders. Expand your perspective and gain valuable insights."
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/f4K6dgv/woman-selecting-pictures-people.jpg",
+      "service_name": "Virtual Career Fair Access",
+      "price": 79.99,
+      "short_description": "Connect with top employers and explore career opportunities in our virtual career fair. Your next career move awaits!"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/4YKSJxq/Global-Education-Summit.jpg",
+      "service_name": "Global Education Summit",
+      "price": 249.99,
+      "short_description": "Immerse yourself in the Global Education Summit, where thought leaders converge to discuss the future of education worldwide."
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/YBmNT9m/Masterclass-Training-Program.jpg",
+      "service_name": "Masterclass Training Program",
+      "price": 179.99,
+      "short_description": "Enroll in our intensive masterclass training program and elevate your skills to new heights. Expert-led training for excellence."
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/D1DnzZh/Innovation-Workshop-Series.jpg",
+      "service_name": "Innovation Workshop Series",
+      "price": 209.99,
+      "short_description": "Unleash your creativity in our innovation workshop series. Learn practical techniques to drive innovation in any field."
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/vx84q87/Tech-Trends-Webinar-Bundle.jpg",
+      "service_name": "Tech Trends Webinar Bundle",
+      "price": 129.99,
+      "short_description": "Stay ahead of the curve with our Tech Trends Webinar Bundle. Explore the latest in technology with industry experts."
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/BjSfRXh/Industry-Connect-Career-Fair.jpg",
+      "service_name": "Industry Connect Career Fair",
+      "price": 89.99,
+      "short_description": "Forge connections with leading industry professionals in our exclusive Industry Connect Career Fair. Your network, your success."
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/m8qXxdS/Education-Leadership-Forum.jpg",
+      "service_name": "Education Leadership Forum",
+      "price": 269.99,
+      "short_description": "Join the Education Leadership Forum and gain insights from pioneers shaping the future of education leadership."
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/r4g3DfV/Digital-Marketing-Bootcamp.jpg",
+      "service_name": "Digital Marketing Bootcamp",
+      "price": 199.99,
+      "short_description": "Accelerate your career with our Digital Marketing Bootcamp. Comprehensive training for mastering the digital landscape."
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/d2gXwK8/Entrepreneurship-Workshop-Series.jpg",
+      "service_name": "Entrepreneurship Workshop Series",
+      "price": 219.99,
+      "short_description": "Embark on the Entrepreneurship Workshop Series. From ideation to execution, learn the key elements of successful entrepreneurship."
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co/Y22GQgy/Leadership-Insights-Webinar.jpg",
+      "service_name": "Leadership Insights Webinar",
+      "price": 139.99,
+      "short_description": "Gain leadership insights from seasoned professionals in our Leadership Insights Webinar. Elevate your leadership skills to lead with impact."
+    }
+  ]
+  
