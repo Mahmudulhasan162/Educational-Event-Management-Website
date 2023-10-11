@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category_name": "Workshops and Webinars",
+    "time": "2-4 hours",
+    "audience_capacity": 150,
+    "price_start_from": 199.99,
+    "image": "https://i.ibb.co/6DGdRfr/Workshops-and-Webinars.jpg"
+  },
+  {
+    "id": 2,
+    "category_name": "Career Fairs",
+    "time": "3-5 hours",
+    "audience_capacity": 500,
+    "price_start_from": 79.99,
+    "image": "https://i.ibb.co/bm2bz7N/Career-Fairs.jpg"
+  },
+  {
+    "id": 3,
+    "category_name": "Educational Conferences",
+    "time": "6-8 hours",
+    "audience_capacity": 300,
+    "price_start_from": 149.99,
+    "image": "https://i.ibb.co/W058Z3f/Educational-Conferences.jpg"
+  },
+  {
+    "id": 4,
+    "category_name": "Training Programs",
+    "time": "4-6 hours",
+    "audience_capacity": 100,
+    "price_start_from": 169.99,
+    "image": "https://i.ibb.co/88M2QXZ/Training-Programs.jpg"
+  },
+  {
+    "id": 5,
+    "category_name": "Skill Development Bootcamps",
+    "time": "5-7 hours",
+    "audience_capacity": 80,
+    "price_start_from": 189.99,
+    "image": "https://i.ibb.co/C04QG57/Skill-Development-Bootcamps.jpg"
+  },
+  {
+    "id": 6,
+    "category_name": "Tech Innovation Showcases",
+    "time": "3-4 hours",
+    "audience_capacity": 200,
+    "price_start_from": 149.99,
+    "image": "https://i.ibb.co/ynQHsWc/Tech-Innovation-Showcases.jpg"
+  }
+]
+
+  
