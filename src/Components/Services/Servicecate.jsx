@@ -23,7 +23,6 @@ const Servicecate = ({category}) => {
     </h5>
     
   </div>
-  <button className="px-4 py-2 bg-[#075E54]">See All</button>
 </div>
     );
 };
