@@ -1,7 +1,7 @@
 const Team = () => {
     return (
         <div className="p-16 text-center">
-            <h1 className="text-4xl font-bold">Our Team</h1>
+            <h1 className="text-4xl font-bold">Our <span className="text-[#075E54]">Team</span></h1>
             <div className="flex my-10 space-x-10">
                 <div>
                 <img className="relative inline-block h-[200px] w-[200px] rounded-full border-4 border-[#075E54] object-cover object-center" src="https://i.ibb.co/ggqWRmN/ezgif-com-gif-maker.jpg" alt="" />

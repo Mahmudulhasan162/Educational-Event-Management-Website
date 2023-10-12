@@ -7,19 +7,22 @@ const Navbar = () => {
             <div>
             <h1 className="text-5xl font-bold">eduEvents</h1>
             </div>
-            <div className="flex gap-10 text-xl font-semibold">
+            <div className="flex gap-6 text-medium font-medium">
             <NavLink to="/"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline" : ""
-           }>Home</NavLink>
+           }>HOME</NavLink>
             <NavLink to="/services"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
-           }>Services</NavLink>
+           }>SERVICES</NavLink>
+            <NavLink to="/about"  className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? " underline" : ""
+           }>ABOUT US</NavLink>
             <NavLink to="/login"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
-           }>Login</NavLink>
+           }>LOGIN</NavLink>
             <NavLink to="/register"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
-           }>Register</NavLink>
+           }>REGISTER</NavLink>
             </div>
         </div>
     );

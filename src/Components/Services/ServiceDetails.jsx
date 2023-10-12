@@ -16,9 +16,9 @@ const ServiceDetails = () => {
    }
 
     return (
-        <div className="max-w-[700px] flex flex-col justify-center items-center mx-auto space-y-5 mt-10 bg-[#3d887f]">
-            <img className="h-[60vh] w-full" src={service.image} alt="" />
-            <div className="p-5  space-y-5 text-center">
+        <div className="max-w-[700px] flex flex-col justify-center items-center mx-auto mt-10 ">
+            <img className="h-[60vh] w-full border-4 border-[#3d887f]" src={service.image} alt="" />
+            <div className="p-5 pt-0 space-y-5 text-center border-4 border-[#3d887f]">
             <h1 className="text-3xl font-bold ">{service.service_name}</h1>
             <p className="text-xl font-medium">{service.short_description}</p>
             <p className="text-2xl font-bold">Price: ${service.price}</p>

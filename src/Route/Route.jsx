@@ -5,6 +5,7 @@ import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import ServicePage from "../Components/Services/ServicePage";
 import ServiceDetails from "../Components/Services/ServiceDetails";
+import AboutUsPage from "../Components/AboutUs/AboutUsPage";
 
 
 const Route = createBrowserRouter ([
@@ -34,6 +35,10 @@ const Route = createBrowserRouter ([
             {
                 path : "/register",
                 element : <Register></Register>
+            },
+            {
+                path : "/about",
+                element : <AboutUsPage></AboutUsPage>
             }
         ]
     }
