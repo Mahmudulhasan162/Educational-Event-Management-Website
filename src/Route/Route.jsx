@@ -6,6 +6,7 @@ import Register from "../Components/Register/Register";
 import ServicePage from "../Components/Services/ServicePage";
 import ServiceDetails from "../Components/Services/ServiceDetails";
 import AboutUsPage from "../Components/AboutUs/AboutUsPage";
+import PrivateRoute from "../Components/Firebase/PrivateRoute";
 
 
 const Route = createBrowserRouter ([
@@ -25,7 +26,7 @@ const Route = createBrowserRouter ([
             },
             {
                 path : "/services/:id",
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader : ()=> fetch("/data.json")
             },
             {

@@ -4,7 +4,6 @@ import Servicecate from "./Servicecate";
 
 
 const ServiceCategories = ({categories}) => {
-    console.log(categories);
     return (
         <div>
             <h1 className="text-4xl my-16 text-center font-bold"><span className="text-[#075E54]">Our</span> Services</h1>

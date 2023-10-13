@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const AboutUsPage = () => {
     return (
         <div className=" w-2/3 mx-auto text-lg font-medium border-4 border-[#075E54] p-6 my-5">
