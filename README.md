@@ -1,8 +1,11 @@
-# React + Vite
+# eduEvents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Users can see a good navbar, banner , about us section, services categories, our team section and footer in the home page and all are relevant to educational and training programs event management system.
 
-Currently, two official plugins are available:
+- The 'See All' button in the 'Our Services' section can be send the users to the service page and in the service page there are a button 'View Details', after clicking the button user can see details information about the specific service they want.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The 'Service Details' route is private, only a logged in user can access that route
+
+- Users can register and login in the website. Users can sign-in using there google account.
+
+- Users can toggle between Login and Register page.
