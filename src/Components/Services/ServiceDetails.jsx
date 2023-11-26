@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
 
 
 const ServiceDetails = () => {
@@ -22,7 +22,9 @@ const ServiceDetails = () => {
             <h1 className="text-3xl font-bold dark:text-white ">{service.service_name}</h1>
             <p className="text-xl font-medium dark:text-white">{service.short_description}</p>
             <p className="text-2xl font-bold dark:text-white">Price: ${service.price}</p>
+            <NavLink to="/cart">
             <button className="bg-[#075E54] text-white px-4 py-2 rounded font-semibold">Add to Cart</button>
+            </NavLink>
             </div>
             
         </div>
