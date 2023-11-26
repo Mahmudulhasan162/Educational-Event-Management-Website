@@ -1,10 +1,36 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Context } from "../Firebase/AuthProvider";
+import { FaMoon } from "react-icons/fa";
+import { BsSun } from "react-icons/bs";
 
 
 const Navbar = () => {
     const {user,Logout} = useContext(Context)
+    const [mode , setMode] =useState("light");
+
+    function changeTheme () {
+        const html = document.documentElement;
+
+        if(mode == "light"){
+            html.classList.remove("light");
+            html.classList.add("dark");
+            setMode("dark"); 
+            localStorage.setItem("mode","dark")   
+        }else{
+            html.classList.remove("dark");
+            html.classList.add("light");
+            setMode("light");
+            localStorage.setItem("mode","light");   
+        }
+    }
+    useEffect(()=>{
+        const currentMode = localStorage.getItem("mode") || "light";
+         setMode(currentMode);
+         const html = document.documentElement;
+         html.classList.add(currentMode)
+
+    },[])
 
     const handleLogout= ()=>{
         Logout().then()
@@ -25,12 +51,17 @@ const Navbar = () => {
             <NavLink to="/about"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
            }>ABOUT US</NavLink>
+           <NavLink to="/cart"  className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? " underline" : ""
+           }>CART</NavLink>
             <NavLink to="/login"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
            }>LOGIN</NavLink>
             <NavLink to="/register"  className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? " underline" : ""
            }>REGISTER</NavLink>
+
+           <button onClick={changeTheme} className="text-2xl p-1 border rounded-full bg-zinc-800">{mode == "dark"? <BsSun/>: <FaMoon/>}</button>
             
             </div>
             <div className="flex gap-5">
