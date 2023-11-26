@@ -34,6 +34,14 @@ const MyCart = ({item}) => {
           }
         })
       }
+      const handleBuyNow= ()=>{
+        Swal.fire({
+          icon: "success",
+          title: "Your work has been saved",
+          showConfirmButton: false,
+          timer: 1500
+        });
+      }
     return (
         <div>
             <div className=" h-60 border-2 border-black dark:border-white flex">
@@ -42,7 +50,7 @@ const MyCart = ({item}) => {
     <h2 className="card-title">{service_name}</h2>
     <p>Price : ${price}</p>
     <div className="card-actions justify-end flex flex-col">
-      <button className="text-white bg-[#075E54] px-3 py-2 rounded">Buy Now</button>
+      <button onClick={handleBuyNow} className="text-white bg-[#075E54] px-3 py-2 rounded">Buy Now</button>
     <button onClick={ ()=> handleDelete(_id) } className="text-white bg-[#075E54] px-3 py-2 rounded">Remove</button>
     </div>
   </div>
