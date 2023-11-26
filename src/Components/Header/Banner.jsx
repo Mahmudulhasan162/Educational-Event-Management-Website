@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="my-10">
+        <div className="my-10 max-w-[1300px] mx-auto">
             <div className="carousel w-full">
   <div id="slide1" className="h-[400px] carousel-item relative w-full text-center"  style={{backgroundImage: `linear-gradient(rgba(0, 0,0, 0.7), rgba(18, 140, 126, 0.7)),url('https://i.ibb.co/mbS8db5/Education.jpg')`,backgroundSize: 'cover', backgroundPosition: 'center',}}>
     <div style={{opacity: '100%'}} className="flex flex-col justify-center items-center mx-auto">

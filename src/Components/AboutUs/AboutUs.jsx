@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-100 dark:bg-zinc-800 py-16">
+    <section className="bg-gray-100 dark:bg-zinc-800 py-16 max-w-[1300px] mx-auto">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white"><span className="text-[#075E54]">About</span> Us</h2>
