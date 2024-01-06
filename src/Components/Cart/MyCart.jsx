@@ -4,7 +4,7 @@
 import Swal from "sweetalert2";
 
 const MyCart = ({item}) => {
-    const {_id, image, service_name,price}= item || {}
+    const {_id,id, image, service_name,price}= item || {}
 
     const handleDelete = _id =>{
         console.log(_id);
@@ -17,13 +17,13 @@ const MyCart = ({item}) => {
           cancelButtonColor: '#d33',
           confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
-          if (result.isConfirmed) {
-            
+          console.log(result);
+          if(result.isConfirmed){
             fetch(`http://localhost:5000/cart/${_id}`,{
-              method : "DELETE"
+              method: "DELETE"
             })
-            .then(res => res.json())
-            .then(data => {
+            .then(res=> res.json())
+            .then(data =>{
               console.log(data);
               Swal.fire(
                 'Deleted!',
@@ -51,7 +51,7 @@ const MyCart = ({item}) => {
     <p>Price : ${price}</p>
     <div className="card-actions justify-end flex flex-col">
       <button onClick={handleBuyNow} className="text-white bg-[#075E54] px-3 py-2 rounded">Buy Now</button>
-    <button onClick={ ()=> handleDelete(_id) } className="text-white bg-[#075E54] px-3 py-2 rounded">Remove</button>
+    <button onClick={ ()=> handleDelete(_id) }  className="text-white bg-[#075E54] px-3 py-2 rounded">Remove</button>
     </div>
   </div>
 </div>
