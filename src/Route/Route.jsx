@@ -28,7 +28,7 @@ const Route = createBrowserRouter ([
             {
                 path : "/services/:id",
                 element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-                loader : ()=> fetch("http://localhost:5000/allData")
+                loader : ({params})=> fetch(`http://localhost:5000/allData/${params.id}`)
             },
             {
                 path : "/login",
@@ -44,8 +44,7 @@ const Route = createBrowserRouter ([
             },
             {
                 path: "/cart",
-                element : <PrivateRoute><Cart></Cart></PrivateRoute>,
-                loader: ()=> fetch('http://localhost:5000/cart')
+                element : <PrivateRoute><Cart></Cart></PrivateRoute>
             }
         ]
     }

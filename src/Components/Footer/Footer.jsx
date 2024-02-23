@@ -1,18 +1,18 @@
 const Footer = () => {
     return (
         <div>
-            <footer className=" footer p-10 bg-[#273443] text-white">
+            <footer className=" footer p-3 md:p-10 bg-[#273443] text-white">
   <nav>
     <header className="footer-title">Services</header> 
-    <a className="link link-hover">Workshops and Webinars</a> 
-    <a className="link link-hover">Career Fairs</a> 
-    <a className="link link-hover">Educational Conferences</a> 
-    <a className="link link-hover">Training Programs</a>
+    <a className="link link-hover" href="/services">Workshops and Webinars</a> 
+    <a className="link link-hover" href="/services">Career Fairs</a> 
+    <a className="link link-hover" href="/services">Educational Conferences</a> 
+    <a className="link link-hover" href="/services">Training Programs</a>
   </nav> 
   <nav>
     <header className="footer-title">Company</header> 
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
+    <a className="link link-hover" href="/about">About us</a> 
+    <a className="link link-hover" href="/">Contact</a> 
   </nav> 
   <nav>
     <header className="footer-title">Social</header> 
