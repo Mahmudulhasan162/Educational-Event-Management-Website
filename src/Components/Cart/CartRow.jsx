@@ -17,10 +17,10 @@ const CartRow = ({order, handleDelete, handleBuyNow}) => {
           <td className="text-sm md:text-xl font-bold dark:text-white">{service_name}</td>
           <td className="text-sm md:text-xl font-semibold dark:text-white">Price: ${price}</td>
           <td>
-            <button onClick={handleBuyNow} className="px-2 md:px-6 text-xs md:text-medium py-1 md:py-2 bg-[#075E54] text-white font-medium rounded my-5 text-center">Buy Now</button>
+            <button onClick={handleBuyNow} className="px-2 md:px-6 text-xs md:text-lg py-1 md:py-2 bg-[#075E54] text-white font-medium rounded my-5 text-center">Buy Now</button>
           </td>
           <td>
-            <button onClick={()=> handleDelete(_id)} className=" px-2 md:px-6 text-xs md:text-medium py-1 md:py-2 bg-[#075E54] text-white font-medium rounded my-5 text-center">Remove</button>
+            <button onClick={()=> handleDelete(_id)} className=" px-2 md:px-6 text-xs md:text-lg py-1 md:py-2 bg-[#075E54] text-white font-medium rounded my-5 text-center">Remove</button>
           </td>
         </tr>
       </table>
