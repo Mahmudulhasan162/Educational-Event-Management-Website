@@ -18,17 +18,17 @@ const Route = createBrowserRouter ([
             {
                 path : "/",
                 element : <Home></Home>,
-                loader : ()=> fetch("http://localhost:5000/services") 
+                loader : ()=> fetch("https://educational-website-server-nu.vercel.app/services") 
             },
             {
                 path : "/services",
                 element : <ServicePage></ServicePage>,
-                loader : ()=> fetch("http://localhost:5000/allData") 
+                loader : ()=> fetch("https://educational-website-server-nu.vercel.app/allData") 
             },
             {
                 path : "/services/:id",
                 element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-                loader : ({params})=> fetch(`http://localhost:5000/allData/${params.id}`)
+                loader : ({params})=> fetch(`https://educational-website-server-nu.vercel.app/allData/${params.id}`)
             },
             {
                 path : "/login",

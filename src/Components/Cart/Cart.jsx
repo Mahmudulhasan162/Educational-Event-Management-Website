@@ -8,7 +8,7 @@ const Cart = () => {
     const {user} = useContext(Context)
     const [orders, setOrders] = useState([]);
 
-    const url = `http://localhost:5000/cart?email=${user?.email}`;
+    const url = `https://educational-website-server-nu.vercel.app/cart?email=${user?.email}`;
     useEffect(() => {
       fetch(url)
         .then((res) => res.json())
@@ -24,7 +24,7 @@ const Cart = () => {
           denyButtonText: `No`,
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/cart/${id}`, {
+            fetch(`https://educational-website-server-nu.vercel.app/cart/${id}`, {
               method: "DELETE",
             })
               .then((res) => res.json())

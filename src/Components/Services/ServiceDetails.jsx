@@ -21,7 +21,7 @@ const ServiceDetails = () => {
 
     try {
         setLoading(true);
-        fetch(`http://localhost:5000/cart`, {
+        fetch(`https://educational-website-server-nu.vercel.app/cart`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

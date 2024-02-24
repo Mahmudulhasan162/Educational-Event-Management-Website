@@ -3,6 +3,7 @@
 
 # Live link : https://educational-events-aaeb4.web.app/
 
+- The project has become MERNStack now. Backend server is connected to mongodb and all the data is coming through it. Increasing the features to make it more efficient. 
 
 - Users can see a good navbar, banner , about us section, services categories, our team section and footer in the home page and all are relevant to educational and training programs event management system.
 
