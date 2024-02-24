@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 const AboutUsPage = () => {
     return (
-        <div className=" mx-1 md:w-2/3 md:h-[80vh] md:only:mx-auto text-sm md:text-lg font-medium border-2 md:border-4 border-[#075E54] p-2 md:p-6 my-5">
+        <div className=" mx-1 md:w-1/3 md:h-[80vh] md:mx-auto text-sm md:text-lg font-medium border-2 md:border-4 border-[#075E54] p-2 md:p-6 my-5">
+          <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white text-center"><span className="text-[#075E54]">About</span> Us</h2>
             <p className="text-gray-600 dark:text-white leading-relaxed mt-4">
             Welcome to <span className="font-bold text-base md:text-xl">eduEvents</span>, where we believe in the transformative power of education and
             professional development. Our mission is to create a platform that brings together learners,
