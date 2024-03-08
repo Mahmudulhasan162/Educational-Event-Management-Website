@@ -11,9 +11,7 @@ const ServicePage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const numberOfPages= Math.ceil(count/itemsPerPage);
 
-    const pages = [...Array(numberOfPages).keys()].map(page => page +1)
-    console.log(pages);
-
+    const pages = [...Array(numberOfPages).keys()].map(page => page +1);
     useEffect(()=>{
         fetch(`https://educational-website-server-nu.vercel.app/allData?page=${currentPage -1 }&size=${itemsPerPage}`)
         .then(res => res.json())
@@ -23,7 +21,6 @@ const ServicePage = () => {
 
     const handleItemsPerPage= e => {
         const val = parseInt(e.target.value);
-        console.log(val);
         setItemsPerPage(val);
         setCurrentPage(0);
     }

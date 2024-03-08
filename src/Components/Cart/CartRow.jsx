@@ -4,8 +4,8 @@
 const CartRow = ({order, handleDelete, handleBuyNow}) => {
     const {_id, image, service_name,price}= order || {}
     return (
-        <div>
-            <table className="table my-6">
+      <table className="table my-6">
+        <tbody>
         <tr>
           <td>
               <div className="avatar">
@@ -23,8 +23,8 @@ const CartRow = ({order, handleDelete, handleBuyNow}) => {
             <button onClick={()=> handleDelete(_id)} className=" px-2 md:px-6 text-xs md:text-lg py-1 md:py-2 bg-[#075E54] text-white font-medium rounded my-5 text-center">Remove</button>
           </td>
         </tr>
+        </tbody>
       </table>
-        </div>
     );
 };
 

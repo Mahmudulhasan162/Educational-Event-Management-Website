@@ -59,8 +59,7 @@ const Cart = () => {
     return (
         <div className=" overflow-x-auto max-w-[1100px] mx-auto md:min-h-[60vh]">
             <h2 className="text-4xl font-bold mb-4 text-gray-800 text-center my-5 dark:text-white"><span className="text-[#075E54]">Your</span> Cart</h2>
-            <table className="table">
-              <tbody>
+            
               {
               orders.map(order =>(
                 <CartRow
@@ -71,8 +70,6 @@ const Cart = () => {
                 ></CartRow>
               ))
             }
-              </tbody>
-            </table>
         </div>
     );
 };
