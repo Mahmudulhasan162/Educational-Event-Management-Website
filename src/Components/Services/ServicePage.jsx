@@ -40,11 +40,11 @@ const ServicePage = () => {
             <Services Services = {services}></Services>
             <center>
             <div className="my-10">
-                <button className="md:btn md:btn-circle md:border-[#075E54] md:mr-5" onClick={handlePrevPage}>❮</button>
+                <button className="md:btn md:btn-circle md:border-[#075E54] mr-1 md:mr-5 dark:text-white md:dark:text-black" onClick={handlePrevPage}>❮</button>
                 {
-                    pages.map(page => <button className={currentPage==page?'bg-[#075E54] md:bg-[#075E54] w-8 h-8 rounded-full text-white md:btn md:btn-circle mr-1 md:mr-5 text-xs md:text-white':'md:btn mr-1 md:mr-5 md:btn-circle md:border-[#075E54] text-xs w-5 h-5'} onClick={()=> setCurrentPage(page)} key={page}>{page}</button>)
+                    pages.map(page => <button className={currentPage==page?'bg-[#075E54] md:bg-[#075E54] w-8 h-8 rounded-full text-white md:btn md:btn-circle mr-1 md:mr-5 text-xs md:text-white':'md:btn mr-1 md:mr-5 md:btn-circle md:border-[#075E54] dark:text-white  md:dark:text-black text-xs w-5 h-5'} onClick={()=> setCurrentPage(page)} key={page}>{page}</button>)
                 }
-                <button className="md:btn md:btn-circle md:border-[#075E54] mr-5" onClick={handleNextPage}>❯</button>
+                <button className="md:btn md:btn-circle md:border-[#075E54] mr-1 md:mr-5 dark:text-white md:dark:text-black" onClick={handleNextPage}>❯</button>
                 <p className="bg-[#075E54] text-sm md:text-lg w-max px-2 py-1 md:px-4 md:py-2 text-white font-semibold rounded-xl mt-5">Select Length</p>
                 <select value={itemsPerPage} onChange={handleItemsPerPage} name="" id="">
                     <option value="6">6</option>
