@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react";
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
 import swal from "sweetalert";
 import { Context } from "../Firebase/AuthProvider";
 
@@ -10,39 +10,41 @@ const ServiceDetails = () => {
     const {price, short_description, image, service_name} = serviceData
     const [loading, setLoading] = useState(false);
     const {user} = useContext(Context)
+    const location = useLocation();
+    const navigate= useNavigate();
     const userData= {
         ...serviceData,
-        email: user.email
+        email: user.email,
     
        }
-
-   const handleCartSubmit =(e) => {
-    e.preventDefault();
-
-    try {
-        setLoading(true);
-        fetch(`https://educational-website-server-nu.vercel.app/cart`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userData),
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
-            swal("Product Added to Cart", "You have successfully added product to Cart", "success");
+       const handleCartSubmit = async (e) => {
+        e.preventDefault();
     
-            // swal("Error", "Failed to add to cart", "error");
-
-    } catch (error) {
-        console.error("Error:", error);
-        swal("Error", "An Error Occupied", "error");
-    } finally {
-        setLoading(false);
+        try {
+            setLoading(true);
+    
+            fetch(`https://educational-website-server-nu.vercel.app/cart`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userData),
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+                swal("Product Added to Cart", "You have successfully added product to Cart", "success"); 
+                navigate(location.state == '/cart')
+            }
+         catch (error) {
+            console.error("Error:", error);
+            swal("Error", "An Error Occurred", "error");
+        } finally {
+            setLoading(false);
+        }
     }
-}
+    
 
     return (
         <div className="max-w-[700px] flex flex-col justify-center items-center mx-auto my-10 p-2 ">

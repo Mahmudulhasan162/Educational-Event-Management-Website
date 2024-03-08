@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { Context } from "../Firebase/AuthProvider";
 import swal from "sweetalert";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 
@@ -18,16 +19,44 @@ const Login = () => {
   const handleGoogleLogIn = () =>{
     googleLogIn().then((result) => {
       swal("Logged In", "You have successfully logged in", "success");
-      Navigate(Location?.state ? Location.state : "/")
-      console.log(result.user);
+      
+      const user = {
+        email: result.user.email
+      }
+      console.log(user);
+      axios.post('https://educational-website-server-nu.vercel.app/jwt', user, {
+        withCredentials: true
+      })
+      .then( res => {
+        console.log(res.data);
+        if(res.data.success){
+          Navigate(Location?.state ? Location.state : "/")
+        }
+      })
     })
   }
   const handleLogin = () => {
     if(email, password){
-      Login(email, password).then(() => {
+      Login(email, password).then((result) => {
         swal("Logged In", "You have successfully logged in", "success");
 
-        Navigate(Location?.state ? Location.state : "/")
+        const loggedInUser = result.user;
+        console.log(loggedInUser);
+        const user = {
+          email
+        }
+        console.log(user);
+        // get access token:
+        axios.post('https://educational-website-server-nu.vercel.app/jwt', user, {
+          withCredentials: true
+        })
+        .then( res => {
+          console.log(res.data);
+
+          if(res.data.success){
+            Navigate(Location?.state ? Location.state : "/")
+          }
+        })
       })
       .catch(()=> {
         swal("User Not Found", "You are not a registered user", "warning");

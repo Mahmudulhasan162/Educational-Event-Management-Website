@@ -4,15 +4,17 @@ import { Context } from "../Firebase/AuthProvider";
 import Swal from "sweetalert2";
 import CartRow from "./CartRow";
 import congrats from '../../assets/congrats-gif-5.gif'
+import axios from "axios";
 const Cart = () => {
     const {user} = useContext(Context)
     const [orders, setOrders] = useState([]);
 
     const url = `https://educational-website-server-nu.vercel.app/cart?email=${user?.email}`;
     useEffect(() => {
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => setOrders(data));
+      axios.get(url,{withCredentials: true})
+      .then(res => {
+        setOrders(res.data)
+      })
     }, [url]);
 
     const handleDelete = (id) => {

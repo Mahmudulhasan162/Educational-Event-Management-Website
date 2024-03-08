@@ -12,7 +12,7 @@ const Review = () => {
         </p>
       </div>
       <div className=" md:flex gap-6 mt-10 mb-10 md:mb-20 max-w-[1100px] mx-auto ">
-        <div className="border-2 border-[#075E54] py-5 px-2 mx-2 md:py-12 md:pl-12 md:pr-3 rounded-xl">
+        <div className="border-2 border-[#075E54] py-5 px-2 mx-2 my-3 md:my-0 md:py-12 md:pl-12 md:pr-3 rounded-xl">
           <div className="flex gap-5">
             <img src={photo2} className=" w-8 h-8 md:w-16 md:h-16 rounded-full" alt="" />
             <div>
